@@ -8,8 +8,8 @@ type currencies_storage struct {
 	converter  converter
 }
 
-func (storage *currencies_storage) Convert(from string, to string, amount float64) float64 {
-	currencyFrom := storage.currencies[from]
-	currencyTo := storage.currencies[to]
-	return storage.converter.Convert(currencyFrom, currencyTo, amount)
-}
+// func (storage *currencies_storage) Convert(from string, to string, amount float64) float64 {
+// 	currencyFrom := storage.currencies[from]
+// 	currencyTo := storage.currencies[to]
+// 	return storage.converter.Convert(currencyFrom, currencyTo, amount)
+// }

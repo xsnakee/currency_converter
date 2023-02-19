@@ -1,5 +1,7 @@
 package currency_converter
 
+import "time"
+
 type dataProvider interface {
-	Load()
+	Load(time time.Time) currencies_storage
 }
